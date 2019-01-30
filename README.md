@@ -55,7 +55,7 @@ this server is:
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000`.
+Now browse to the app at `http://localhost:8000`. Please close browser for every change and use incognito mode. It is found that the old page persists.
 
 ### Notes
 
