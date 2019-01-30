@@ -1,0 +1,21 @@
+<table class="table table-bordered table-condensed table-striped table-hover">
+  <thead>
+    <tr ng-repeat="device in devices |limitTo:1">
+      <th class="col-md-2 ">Owner</th>
+      <th class="col-md-2">IP</th>
+      <th class="col-md-2">{{categoryTitle}}</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr ng-repeat="device in devices | orderBy:filterKey:true | limitTo:5">
+      <td>
+        <a href=# editable-text="device.owner">{{ device.owner}}</a>
+
+        </td>
+      <td>{{ device.ip}}</td>
+      <td>{{device[filterKey] | formatStr:formatUnit }}</td>
+
+
+  </tbody>
+</table>
+ 
